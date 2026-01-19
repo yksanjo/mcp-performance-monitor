@@ -40,48 +40,21 @@ mcp-performance-monitor/
 
 ## Quick Start
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-- SQLite3
+For detailed installation instructions, see [INSTALL.md](INSTALL.md).
 
-### Installation
-
-1. Clone the repository:
+### Quick Installation:
 ```bash
-git clone <repository-url>
+# Clone the repository
+git clone https://github.com/yksanjo/mcp-performance-monitor.git
 cd mcp-performance-monitor
-```
 
-2. Install dependencies:
-```bash
-# Install all packages
+# Install dependencies and start demo
 npm run install:all
-
-# Or install individually:
-cd packages/monitoring-agent && npm install
-cd packages/backend && npm install
-cd packages/frontend && npm install
-```
-
-3. Set up the database:
-```bash
-npm run db:init
-```
-
-4. Start the services:
-```bash
-# Start backend API
-npm run start:backend
-
-# Start frontend dashboard (in another terminal)
-npm run start:frontend
-
-# Or start both with demo data
+npm run db:seed
 npm run start:demo
 ```
 
-5. Open your browser to `http://localhost:5173`
+Open your browser to `http://localhost:5173`
 
 ## Usage
 
