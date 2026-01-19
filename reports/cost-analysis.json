@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-01-19T17:54:45.855Z",
+  "pricingModels": [
+    {
+      "type": "Free",
+      "description": "Completely free to use",
+      "examples": [
+        "filesystem",
+        "sqlite",
+        "discord"
+      ],
+      "limitations": "Limited functionality or rate limits"
+    },
+    {
+      "type": "Freemium",
+      "description": "Free tier with paid upgrades",
+      "examples": [
+        "brave-search",
+        "weather",
+        "github"
+      ],
+      "limitations": "Usage caps on free tier"
+    },
+    {
+      "type": "Usage-based",
+      "description": "Pay per API call or token",
+      "examples": [
+        "openai",
+        "anthropic",
+        "cohere"
+      ],
+      "limitations": "Costs can escalate quickly"
+    },
+    {
+      "type": "Subscription",
+      "description": "Monthly/annual subscription",
+      "examples": [
+        "notion",
+        "google-workspace"
+      ],
+      "limitations": "Fixed cost regardless of usage"
+    }
+  ],
+  "estimatedMonthlyCosts": {
+    "smallProject": "$10-50",
+    "mediumProject": "$50-200",
+    "largeProject": "$200-1000+"
+  },
+  "costOptimizationTips": [
+    "Monitor API usage regularly",
+    "Implement caching for frequent queries",
+    "Use batch operations when possible",
+    "Set up budget alerts",
+    "Consider serverless deployment for variable loads"
+  ]
+}

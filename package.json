@@ -1,0 +1,65 @@
+{
+  "name": "mcp-performance-monitor",
+  "version": "1.0.0",
+  "description": "MCP Performance Monitor - Monitor and analyze MCP server performance",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:packages",
+    "install:packages": "npm run install:agent && npm run install:backend && npm run install:frontend",
+    "install:agent": "cd packages/monitoring-agent && npm install",
+    "install:backend": "cd packages/backend && npm install",
+    "install:frontend": "cd packages/frontend && npm install",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd packages/backend && npm start",
+    "start:frontend": "cd packages/frontend && npm start",
+    "start:demo": "npm run db:seed && npm run start:all",
+    "build:all": "npm run build:agent && npm run build:backend && npm run build:frontend",
+    "build:agent": "cd packages/monitoring-agent && npm run build",
+    "build:backend": "cd packages/backend && npm run build",
+    "build:frontend": "cd packages/frontend && npm run build",
+    "test:all": "npm run test:agent && npm run test:backend && npm run test:frontend",
+    "test:agent": "cd packages/monitoring-agent && npm test",
+    "test:backend": "cd packages/backend && npm test",
+    "test:frontend": "cd packages/frontend && npm test",
+    "db:init": "cd packages/backend && npm run db:init",
+    "db:seed": "cd packages/backend && npm run db:seed",
+    "db:reset": "cd packages/backend && npm run db:reset",
+    "demo:generate": "node scripts/demo-data-generator.js",
+    "research:generate": "node scripts/gather-mcp-data.js",
+    "lint:all": "npm run lint:agent && npm run lint:backend && npm run lint:frontend",
+    "lint:agent": "cd packages/monitoring-agent && npm run lint",
+    "lint:backend": "cd packages/backend && npm run lint",
+    "lint:frontend": "cd packages/frontend && npm run lint",
+    "format:all": "npm run format:agent && npm run format:backend && npm run format:frontend",
+    "format:agent": "cd packages/monitoring-agent && npm run format",
+    "format:backend": "cd packages/backend && npm run format",
+    "format:frontend": "cd packages/frontend && npm run format",
+    "clean": "rm -rf node_modules packages/*/node_modules packages/*/dist packages/*/build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "monitoring",
+    "performance",
+    "dashboard",
+    "analytics",
+    "cost-optimization"
+  ],
+  "author": "MCP Performance Monitor Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mcp-performance-monitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/mcp-performance-monitor/issues"
+  },
+  "homepage": "https://github.com/yourusername/mcp-performance-monitor#readme"
+}

@@ -1,0 +1,360 @@
+{
+  "generatedAt": "2026-01-19T17:54:45.854Z",
+  "totalServers": 10,
+  "serversByCategory": {
+    "Local": [
+      "filesystem"
+    ],
+    "AI": [
+      "openai"
+    ],
+    "Search": [
+      "brave-search"
+    ],
+    "Development": [
+      "github"
+    ],
+    "Productivity": [
+      "notion",
+      "google-calendar"
+    ],
+    "Database": [
+      "sqlite",
+      "postgres"
+    ],
+    "Data": [
+      "weather"
+    ],
+    "Communication": [
+      "discord"
+    ]
+  },
+  "topServersByPopularity": [
+    {
+      "name": "filesystem",
+      "description": "File system access for reading/writing files",
+      "category": "Local",
+      "popularity": "Very High",
+      "cost": "Free (local)",
+      "commonIssues": [
+        "Permission errors",
+        "File path issues",
+        "Rate limiting"
+      ],
+      "githubStars": 1200,
+      "lastUpdated": "2024-01-15"
+    },
+    {
+      "name": "openai",
+      "description": "OpenAI API integration",
+      "category": "AI",
+      "popularity": "Very High",
+      "cost": "Usage-based pricing",
+      "pricing": {
+        "gpt4": "$0.03 per 1K tokens (input)",
+        "gpt35": "$0.0015 per 1K tokens (input)"
+      },
+      "commonIssues": [
+        "Cost management",
+        "Rate limiting",
+        "Response consistency"
+      ],
+      "githubStars": 1500,
+      "lastUpdated": "2024-01-20"
+    },
+    {
+      "name": "brave-search",
+      "description": "Search the web using Brave Search API",
+      "category": "Search",
+      "popularity": "High",
+      "cost": "Free tier available, paid for high volume",
+      "pricing": {
+        "free": "100 searches/day",
+        "paid": "$0.10 per 1000 searches"
+      },
+      "commonIssues": [
+        "API rate limits",
+        "Search result quality",
+        "Network latency"
+      ],
+      "githubStars": 850,
+      "lastUpdated": "2024-01-10"
+    },
+    {
+      "name": "github",
+      "description": "GitHub repository access and management",
+      "category": "Development",
+      "popularity": "High",
+      "cost": "Free for public repos, GitHub API limits apply",
+      "pricing": {
+        "free": "5000 requests/hour (authenticated)",
+        "paid": "Enterprise pricing"
+      },
+      "commonIssues": [
+        "Rate limiting",
+        "Authentication issues",
+        "Repository permissions"
+      ],
+      "githubStars": 950,
+      "lastUpdated": "2024-01-12"
+    },
+    {
+      "name": "notion",
+      "description": "Notion workspace integration",
+      "category": "Productivity",
+      "popularity": "High",
+      "cost": "Free for personal use, Notion API limits",
+      "pricing": {
+        "free": "Limited API calls",
+        "paid": "Notion Plus/Enterprise"
+      },
+      "commonIssues": [
+        "API rate limits",
+        "Permission scopes",
+        "Data sync delays"
+      ],
+      "githubStars": 1100,
+      "lastUpdated": "2024-01-18"
+    },
+    {
+      "name": "sqlite",
+      "description": "SQLite database operations",
+      "category": "Database",
+      "popularity": "Medium",
+      "cost": "Free",
+      "commonIssues": [
+        "Database locking",
+        "Concurrency issues",
+        "File corruption"
+      ],
+      "githubStars": 600,
+      "lastUpdated": "2024-01-08"
+    },
+    {
+      "name": "weather",
+      "description": "Weather data and forecasts",
+      "category": "Data",
+      "popularity": "Medium",
+      "cost": "Free tier with paid options",
+      "pricing": {
+        "free": "1000 calls/day",
+        "paid": "$0.10 per 1000 calls"
+      },
+      "commonIssues": [
+        "API downtime",
+        "Location accuracy",
+        "Data freshness"
+      ],
+      "githubStars": 450,
+      "lastUpdated": "2024-01-05"
+    },
+    {
+      "name": "postgres",
+      "description": "PostgreSQL database operations",
+      "category": "Database",
+      "popularity": "Medium",
+      "cost": "Free (self-hosted), Cloud pricing varies",
+      "commonIssues": [
+        "Connection pooling",
+        "Query performance",
+        "Schema migrations"
+      ],
+      "githubStars": 700,
+      "lastUpdated": "2024-01-14"
+    },
+    {
+      "name": "google-calendar",
+      "description": "Google Calendar integration",
+      "category": "Productivity",
+      "popularity": "Medium",
+      "cost": "Free with Google Workspace limits",
+      "commonIssues": [
+        "OAuth complexity",
+        "Calendar sharing permissions",
+        "Timezone issues"
+      ],
+      "githubStars": 550,
+      "lastUpdated": "2024-01-07"
+    },
+    {
+      "name": "discord",
+      "description": "Discord bot and channel management",
+      "category": "Communication",
+      "popularity": "Medium",
+      "cost": "Free",
+      "commonIssues": [
+        "Rate limiting",
+        "Message size limits",
+        "Webhook reliability"
+      ],
+      "githubStars": 500,
+      "lastUpdated": "2024-01-09"
+    }
+  ],
+  "serversByCost": {
+    "free": [
+      {
+        "name": "filesystem",
+        "description": "File system access for reading/writing files",
+        "category": "Local",
+        "popularity": "Very High",
+        "cost": "Free (local)",
+        "commonIssues": [
+          "Permission errors",
+          "File path issues",
+          "Rate limiting"
+        ],
+        "githubStars": 1200,
+        "lastUpdated": "2024-01-15"
+      },
+      {
+        "name": "brave-search",
+        "description": "Search the web using Brave Search API",
+        "category": "Search",
+        "popularity": "High",
+        "cost": "Free tier available, paid for high volume",
+        "pricing": {
+          "free": "100 searches/day",
+          "paid": "$0.10 per 1000 searches"
+        },
+        "commonIssues": [
+          "API rate limits",
+          "Search result quality",
+          "Network latency"
+        ],
+        "githubStars": 850,
+        "lastUpdated": "2024-01-10"
+      },
+      {
+        "name": "github",
+        "description": "GitHub repository access and management",
+        "category": "Development",
+        "popularity": "High",
+        "cost": "Free for public repos, GitHub API limits apply",
+        "pricing": {
+          "free": "5000 requests/hour (authenticated)",
+          "paid": "Enterprise pricing"
+        },
+        "commonIssues": [
+          "Rate limiting",
+          "Authentication issues",
+          "Repository permissions"
+        ],
+        "githubStars": 950,
+        "lastUpdated": "2024-01-12"
+      },
+      {
+        "name": "notion",
+        "description": "Notion workspace integration",
+        "category": "Productivity",
+        "popularity": "High",
+        "cost": "Free for personal use, Notion API limits",
+        "pricing": {
+          "free": "Limited API calls",
+          "paid": "Notion Plus/Enterprise"
+        },
+        "commonIssues": [
+          "API rate limits",
+          "Permission scopes",
+          "Data sync delays"
+        ],
+        "githubStars": 1100,
+        "lastUpdated": "2024-01-18"
+      },
+      {
+        "name": "sqlite",
+        "description": "SQLite database operations",
+        "category": "Database",
+        "popularity": "Medium",
+        "cost": "Free",
+        "commonIssues": [
+          "Database locking",
+          "Concurrency issues",
+          "File corruption"
+        ],
+        "githubStars": 600,
+        "lastUpdated": "2024-01-08"
+      },
+      {
+        "name": "weather",
+        "description": "Weather data and forecasts",
+        "category": "Data",
+        "popularity": "Medium",
+        "cost": "Free tier with paid options",
+        "pricing": {
+          "free": "1000 calls/day",
+          "paid": "$0.10 per 1000 calls"
+        },
+        "commonIssues": [
+          "API downtime",
+          "Location accuracy",
+          "Data freshness"
+        ],
+        "githubStars": 450,
+        "lastUpdated": "2024-01-05"
+      },
+      {
+        "name": "postgres",
+        "description": "PostgreSQL database operations",
+        "category": "Database",
+        "popularity": "Medium",
+        "cost": "Free (self-hosted), Cloud pricing varies",
+        "commonIssues": [
+          "Connection pooling",
+          "Query performance",
+          "Schema migrations"
+        ],
+        "githubStars": 700,
+        "lastUpdated": "2024-01-14"
+      },
+      {
+        "name": "google-calendar",
+        "description": "Google Calendar integration",
+        "category": "Productivity",
+        "popularity": "Medium",
+        "cost": "Free with Google Workspace limits",
+        "commonIssues": [
+          "OAuth complexity",
+          "Calendar sharing permissions",
+          "Timezone issues"
+        ],
+        "githubStars": 550,
+        "lastUpdated": "2024-01-07"
+      },
+      {
+        "name": "discord",
+        "description": "Discord bot and channel management",
+        "category": "Communication",
+        "popularity": "Medium",
+        "cost": "Free",
+        "commonIssues": [
+          "Rate limiting",
+          "Message size limits",
+          "Webhook reliability"
+        ],
+        "githubStars": 500,
+        "lastUpdated": "2024-01-09"
+      }
+    ],
+    "paid": [
+      {
+        "name": "openai",
+        "description": "OpenAI API integration",
+        "category": "AI",
+        "popularity": "Very High",
+        "cost": "Usage-based pricing",
+        "pricing": {
+          "gpt4": "$0.03 per 1K tokens (input)",
+          "gpt35": "$0.0015 per 1K tokens (input)"
+        },
+        "commonIssues": [
+          "Cost management",
+          "Rate limiting",
+          "Response consistency"
+        ],
+        "githubStars": 1500,
+        "lastUpdated": "2024-01-20"
+      }
+    ]
+  }
+}

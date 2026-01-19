@@ -1,0 +1,17 @@
+
+> @mcp-monitor/backend@1.0.0 start
+> node dist/index.js
+
+MCP Monitor initialized
+Backend API server running on port 3001
+Health check: http://localhost:3001/api/health
+API documentation:
+  GET  /api/servers           - List all servers
+  GET  /api/servers/:id       - Get server details
+  POST /api/servers           - Register new server
+  GET  /api/servers/:id/metrics - Get server metrics
+  GET  /api/metrics           - Get all metrics
+  GET  /api/logs              - Get performance logs
+  GET  /api/servers/compare   - Compare servers
+  GET  /api/usage/patterns    - Get usage patterns
+SIGTERM received, shutting down gracefully...

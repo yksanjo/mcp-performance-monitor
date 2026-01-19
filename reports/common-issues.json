@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-01-19T17:54:45.855Z",
+  "totalIssueCategories": 4,
+  "issuesByFrequency": {
+    "high": [
+      {
+        "category": "Authentication",
+        "issues": [
+          "OAuth token expiration",
+          "API key rotation problems",
+          "Permission scope mismatches"
+        ],
+        "frequency": "High"
+      },
+      {
+        "category": "Cost",
+        "issues": [
+          "Unexpected API charges",
+          "Lack of cost monitoring",
+          "Inefficient query patterns"
+        ],
+        "frequency": "High"
+      }
+    ],
+    "medium": [
+      {
+        "category": "Performance",
+        "issues": [
+          "High latency on first call",
+          "Memory leaks in long-running servers",
+          "Connection pooling exhaustion"
+        ],
+        "frequency": "Medium"
+      },
+      {
+        "category": "Reliability",
+        "issues": [
+          "Server crashes under load",
+          "Network timeouts",
+          "Data consistency issues"
+        ],
+        "frequency": "Medium"
+      }
+    ],
+    "low": []
+  },
+  "recommendedSolutions": [
+    "Implement comprehensive logging",
+    "Add retry logic with exponential backoff",
+    "Monitor error rates and set up alerts",
+    "Regularly update server dependencies",
+    "Implement circuit breaker patterns"
+  ]
+}
